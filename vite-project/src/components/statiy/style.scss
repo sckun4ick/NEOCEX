@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+    --gray: #E5E5E5;
+    --dark-gray: #393939;
+    --gray-main: #BBBCBC;
+    --gray-light: #F2F2F2;
+    --orange: #CDA177;
+    --green: #A7C186;
+    --green-hover: #bcd49d;
+    --yellow: #DFD1A7;
+    --yellow-hover: #f0e7cf;
+
+    --trans: 0.5s all ease;
+
+}
+
+@font-face {
+    font-family: 'Monserat-B';
+    src: url(../../assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-M';
+    src: url(../../assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Cuirier-B';
+    src: url(../../assets/font/courier/ofont.ru_Courier\ New.ttf);
+}
