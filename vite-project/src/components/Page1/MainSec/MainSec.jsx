@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './style.scss'
 import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom';
-import { Photo } from '../../photo.js';
+import { Photo } from '../../../photo.js';
 
 function App() {
+
   return (
     <>
       <section className='main'>

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+    --gray: #E5E5E5;
+    --dark-gray: #393939;
+    --gray-main: #BBBCBC;
+    --gray-light: #F2F2F2;
+    --orange: #CDA177;
+    --green: #A7C186;
+    --green-hover: #bcd49d;
+    --yellow: #DFD1A7;
+    --yellow-hover: #f0e7cf;
+
+    --trans: 0.5s all ease;
+
+}
+
+@font-face {
+    font-family: 'Monserat-B';
+    src: url(../../assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-M';
+    src: url(../../assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-R';
+    src: url(../../assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cuirier-B';
+    src: url(../../assets/font/courier/ofont.ru_Courier\ New.ttf);
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .verh_footer{
+        width: 100%;
+        height: 75%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-top: 1px solid var(--gray);
+
+        .center{
+            width: 80%;
+            height: 60%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+
+            .left{
+                width: 25%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                p{
+                    font-family:'Courier New', Courier, monospace;
+                    color: var(--dark-gray);
+                    font-size: 16px;
+                }
+
+                .contact_call{
+                    width: max-content;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 1vw;
+                    align-items: center;
+                    a{
+                        font-family: 'Monserat-B';
+                        color: var(--dark-gray);
+                        font-size: 16px;
+                        text-decoration: none; 
+                    }
+                }
+
+            }
+
+            ul{
+                width: 15%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                gap: 4vh;
+
+                border-right: 1px solid var(--gray);
+
+                a{
+                    font-family: 'Monserat-R';
+                    color: var(--dark-gray);
+                    font-size: 16px;
+                    text-decoration: none;
+                    transition: var(--trans);
+
+                    &:hover{
+                        color: var(--orange);
+                    }
+                }
+
+                &:nth-child(4){
+                    border-right: 0px solid transparent;
+                }
+            }
+            
+            .contact{
+                width: max-content;
+                height: 24px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 1vw;
+            }
+            
+
+        }
+
+        
+    }
+
+    .niz_footer{
+        width: 100%;
+        height: 25%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid var(--gray);
+
+        p{
+            font-family:'Courier New', Courier, monospace;
+            color: var(--dark-gray);
+            font-size: 16px;
+        }
+    }
+}

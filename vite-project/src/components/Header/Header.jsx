@@ -10,8 +10,8 @@ function App() {
         <div className="center_header">
             <Link to="/" className='image_log'><img src={Photo.logo_black} alt="" /></Link>
             <nav>
-                <Link to="">Проекты</Link>
-                <Link to="">О нас</Link>
+                <Link to="/project">Проекты</Link>
+                <Link to="/about">О нас</Link>
                 <Link to="">Услуги</Link>
                 <Link to="">Цены</Link>
                 <Link to="">Статьи</Link>

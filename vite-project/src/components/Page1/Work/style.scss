@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+    --gray: #E5E5E5;
+    --dark-gray: #393939;
+    --gray-main: #BBBCBC;
+    --gray-light: #F2F2F2;
+    --orange: #CDA177;
+    --green: #A7C186;
+    --green-hover: #bcd49d;
+    --yellow: #DFD1A7;
+    --yellow-hover: #f0e7cf;
+
+    --trans: 0.5s all ease;
+
+}
+
+@font-face {
+    font-family: 'Monserat-B';
+    src: url(../../../assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-M';
+    src: url(../../../assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-R';
+    src: url(../../../assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cuirier-B';
+    src: url(../../../assets/font/courier/ofont.ru_Courier\ New.ttf);
+}
+
+.work{
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .verh{
+            width: 50%;
+            height: 30%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            h1{
+                font-family: 'Monserat-B';
+                color: var(--dark-gray);
+                font-size: 36px;
+                text-transform: uppercase;
+            }
+        }
+
+        .niz{
+            width: 100%;
+            height: 70%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .left{
+                width: 40%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .palka{
+                    z-index: 0;
+                    width: 1px;
+                    height: 100%;
+                    
+                    position: relative;
+                    left: 2vw;
+                    background: var(--gray-main);
+                    
+                }
+
+                .polpota{
+                    width: 60%;
+                    height: 90%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    position: relative;
+                    right: 12vw;
+                    z-index: 1;
+
+                    .light{
+                        width: 100%;
+                        height: 15%;
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        
+
+                        p{
+                            font-family: "Monserat-R";
+                            color: var(--gray-main);
+                            font-size: 18px;
+                        }
+
+                        div{
+                            border-radius: 100px;
+                            border: 1px solid var(--gray-main);
+                            background: white;
+
+                            width: 54px;
+                            height: 54px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 2vw;
+
+                            
+
+                        }
+
+                        &:nth-child(1){
+                            div{
+
+                                border: 1px solid var(--orange);
+                                
+                            }
+
+                            p{
+                                color: var(--orange);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-left: 1px solid var(--gray);
+
+                .center_r{
+                    width: 80%;
+                    height: 80%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .we{
+                        width: 100%;
+                        height: 50%;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        h4{
+                            font-family: 'Monserat-M';
+                            color: var(--dark-gray);
+                            font-size: 24px;
+
+                        }
+
+                        p{
+                            font-family: 'Courier New', Courier, monospace;
+                            color: var(--dark-gray);
+                            font-size: 18px;
+                        }
+                    }
+
+                    .ew{
+                        width: 40%;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        button{
+                            width: 40%;
+
+                            background: transparent;
+                            border-style: none;
+                            cursor: pointer;
+                            transition: var(--trans);
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

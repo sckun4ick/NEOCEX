@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+    --gray: #E5E5E5;
+    --dark-gray: #393939;
+    --gray-main: #BBBCBC;
+    --gray-light: #F2F2F2;
+    --orange: #CDA177;
+    --green: #A7C186;
+    --green-hover: #bcd49d;
+    --yellow: #DFD1A7;
+    --yellow-hover: #f0e7cf;
+
+    --trans: 0.5s all ease;
+
+}
+
+@font-face {
+    font-family: 'Monserat-B';
+    src: url(../../../assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-M';
+    src: url(../../../assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Monserat-R';
+    src: url(../../../assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cuirier-B';
+    src: url(../../../assets/font/courier/ofont.ru_Courier\ New.ttf);
+}
+
+.queat{
+    width: 100%;
+    height: 140vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .verh{
+            width: 50%;
+            height: 20%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            h1{
+                font-family: 'Monserat-B';
+                color: var(--dark-gray);
+                font-size: 36px;
+                text-transform: uppercase;
+            }
+        }
+
+        .niz{
+            width: 100%;
+            height: 80%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .left{
+                width: 20%;
+                height: 100%;
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                span{
+                    font-family: 'Cuirier-B';
+                    color: var(--orange);
+                    font-size: 18px;
+                }
+            }
+
+            .right{
+                width: 60%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .otvet{
+                    width: 100%;
+                    height: 10%;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    border-bottom: 1px solid var(--gray);
+
+                    img{
+                        cursor: pointer;
+                        transition: var(--trans);
+
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .qa{
+                        width: 90%;
+                        height: 80%;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        h4{
+                            font-family: 'Monserat-M';
+                            color: var(--dark-gray);
+                            font-size: 24px;
+
+                            margin-bottom: 2vh;
+                        }
+
+                        div{
+                            width: 100%;
+                            height: 60%;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            border-left: 2px solid var(--orange);
+
+                            p{
+                                margin-left: 2vw;
+
+                                font-family: 'Courier New', Courier, monospace;
+                                color: var(--dark-gray);
+                                font-size: 18px;
+                            }
+                        }
+
+                    }
+
+                    &:first-child{
+                        height: 20%;
+                    }
+
+                    
+
+                }
+            }
+            
+        }
+    }
+}
